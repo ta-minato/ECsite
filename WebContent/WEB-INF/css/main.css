@@ -1,0 +1,124 @@
+@charset "UTF-8";
+header{
+	display: flex;
+	justify-content: center;
+	background-color: #D3D3D3;
+}
+
+.img:hover {
+
+}
+/*商品一覧*/
+ul {
+	width: calc(100 + 20px);
+	margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+li {
+	padding: 0 10px 20px;
+}
+.itemlist4 {
+	width: calc(25% - 20px);
+}
+
+/*リンク*/
+a{
+  padding: 0 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+  text-decoration: none;
+}
+
+a:hover{
+  background-position: -100% 0;
+  color: #fff;
+}
+/*検索フォーム*/
+/*フォーム全体を中央へ*/
+#form1{
+  display: flex;
+  justify-content: center; /*中央へ固定*/
+  height:50px;/*高さ*/
+}
+/*入力フォーム*/
+#sbox1{
+  width:250px;/*横幅*/
+  padding:0 15px;/*プレースホルダーの位置調整*/
+  border-radius:4px 0 0 4px;/*左側の角を少し丸める*/
+  background:#eee;/*検背景カラー*/
+  border:none;/*枠線を消す*/
+  outline:0;/*クリック時の青い枠線消す*/
+}
+/*検索ボタン*/
+#sbtn1{
+  width:70px;/*横幅*/
+  border-radius:0 4px 4px 0;/*右側の角を少し丸める*/
+  background:#7fbfff;/*背景カラー*/
+  border:none;/*枠線を消す*/
+  color:#fff;/*テキストカラー*/
+  font-size:16px;/*フォントサイズ指定*/
+  cursor: pointer;/*マウスを乗せると指差しポインターになる*/
+}
+/*検索ボタンマウスオーバー時*/
+#sbtn1:hover {
+  background: #92dbff;/*背景カラー変更*/
+}
+
+/*ボタン*/
+.button {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.pagetop a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+	filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #b2d1fb;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding:5px 10px;
+	filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+/*エラーメッセージ*/
+.errorMsg {
+	color: #FF0000;
+}
